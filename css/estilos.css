@@ -98,6 +98,17 @@ body{
     color: rgb(35,35,35);
 }
 
+#botonGaleria div a, #botonProyecto div a{
+    display: block;
+    border: 0.4px solid white;
+    width: 210px;
+    margin-top: 25px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+}
+
 #sobreMi{
     background-color: rgb(35,35,35);
     text-align: center;
@@ -114,6 +125,19 @@ body{
     text-align: center;
     color: black;
 }
+
+#textoSobreMi_1{
+    display: block;
+    height: 100%;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 55%;
+    margin-right: 10%;
+    background: rgba(20, 20, 20, 0.8);
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    color: white;
+  }
 
 #contactoFooter{
     background-color: rgb(35,35,35);
