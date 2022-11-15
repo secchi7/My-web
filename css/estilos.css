@@ -98,7 +98,18 @@ body{
     color: rgb(35,35,35);
 }
 
-#botonGaleria div a, #botonProyecto div a{
+#botonGaleria div a{
+    display: block;
+    border: 0.4px solid white;
+    width: 210px;
+    margin-top: 25px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#botonProyecto div a{
     display: block;
     border: 0.4px solid white;
     width: 210px;
