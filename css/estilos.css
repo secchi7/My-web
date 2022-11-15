@@ -80,6 +80,7 @@ body{
 
 #galería_1, #galería_2, #galería_3, #galería_4, #galería_5{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(35,35,35);
 } 
@@ -178,3 +179,13 @@ body{
     letter-spacing: 0.2em;
     color: white;
 }
+
+@media (min-width: 600px) {
+    #galería_1, #galería_2, #galería_3, #galería_4, #galería_5{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 33%;
+        justify-content: space-around;
+        background-color: rgb(35,35,35);
+    } 
+  }
