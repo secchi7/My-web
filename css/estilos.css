@@ -113,6 +113,12 @@ body{
     color: rgb(35,35,35);
 }
 
+
+.Cataratas, .LagoTraful, .PeritoMotena, .Norte{
+    height: 500px;
+}
+
+
 #botonGaleria div a{
     display: block;
     border: 0.4px solid white;
@@ -194,11 +200,23 @@ body{
     color: white;
 }
 
+/* Si la página se va chicando para que no se deformen las imagenes */
+
+@media (max-width:1200px) {
+
+    .Cataratas, .LagoTraful, .PeritoMotena, .Norte{
+        height: auto;
+        height: auto;
+    }
+
+}
+
 /* Mobile */
 
 @media (max-width:700px) {
     .menu-btn {
         display: block;
+        position: fixed;
     }
     
     .menu-btn:hover {
@@ -207,33 +225,24 @@ body{
 
     .nav-main ul.nav-menu {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background: rgba(0,0,0,0.5);
-        width: 200px;
+        width: 170px;
         height: 100%;
-        padding: 30px;
+        padding-left: 30px;
         transform: translateX(-500px);
         transition: transform 0.5s ease-in-out;
     }
     
     .nav-main ul.nav-menu li {
-        font-size: 14px;
+        font-size: 10px;
     }
     
     .nav-main ul.nav-menu.show {
         transform: translateX(-20px);
     }
-    /* #inicio{
-        height: 1000px;
-        background-image: url(../img/miramar.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 400px;
-        padding-left: 20px;
-        background-attachment: fixed;
-    } */
 
     #sobreMi{
         background-color: rgb(35,35,35);
@@ -244,8 +253,14 @@ body{
     #textoSobreMi_1{
         margin-left: 100px;
         font-size: 12px;
-      }
-      #textoContacto{
+    }
+
+    .Cataratas, .LagoTraful, .PeritoMotena, .Norte{
+        height: auto;
+        height: auto;
+    }
+    
+    #textoContacto{
         margin-left: 100px;
         font-size: 12px;
     }
