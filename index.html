@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrés Secchi Gehrls</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div>
+        <nav class="nav-main">
+            <ul class="nav-menu">
                 <li><a href="#">INICIO</a></li>
                 <li><a href="#sobreMi">SOBRE MÍ</a></li>
                 <li><a href="#galeríaGeneral">GALERÍA</a></li>
                 <li><a href="#contactoFooter">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
 
     <main>
@@ -66,12 +72,12 @@
 
             <section id="galería_1">
                 <div id="norte">
-                    <img src="img/norte_purmamarca.JPG" alt="norte" height="500px">
+                    <img src="img/norte_purmamarca.JPG" loading="lazy" alt="norte" height="500px">
                     <p>Purmamarca - Cerro de los siete colores</p>
                 </div>
 
                 <div id="cataratas">
-                    <img src="img/iguazu.JPG" alt="cataratas" height="500px">
+                    <img src="img/iguazu.JPG" loading="lazy" alt="cataratas" height="500px">
                     <p>Cataratas del Iguazu</p>
                 </div>
                 
@@ -79,12 +85,12 @@
 
             <section id="galería_2">
                 <div id="PeritoMoreno">
-                    <img src="img/perito_moreno.jpg" alt="PeritoMoreno" height="500px">
+                    <img src="img/perito_moreno.jpg" loading="lazy" alt="PeritoMoreno" height="500px">
                     <p>Calafate - Perito Moreno</p>
                 </div>
 
                 <div id="Lago_Traful">
-                    <img src="img/sur_villaTraful.JPG" alt="Lago_Traful" height="500px">
+                    <img src="img/sur_villaTraful.JPG" loading="lazy" alt="Lago_Traful" height="500px">
                     <p>Villa Traful - Lago Traful</p>
                 </div>
                 
@@ -112,5 +118,6 @@
             </div>
         </section>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
