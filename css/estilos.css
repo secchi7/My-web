@@ -148,7 +148,18 @@ body{
 }
 
 #sobreMi_1{
-    background-image: url(../img/amanecer.JPG);
+    background-image: url(../img/cordoba.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+#sobreMi_2{
+    background-image: url(../img/tucuman_1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +180,7 @@ body{
     font-size: 15px;
     letter-spacing: 0.2em;
     color: white;
-  }
+}
 
 #contactoFooter{
     background-color: rgb(35,35,35);
@@ -182,7 +193,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: auto;
 
 }
 
@@ -209,6 +220,13 @@ body{
         height: auto;
     }
 
+    #textoSobreMi_1{
+        margin-left: 50px;
+    }
+    
+    #textoContacto{
+        margin-left: 50px;
+    }
 }
 
 /* Mobile */
@@ -243,12 +261,6 @@ body{
     .nav-main ul.nav-menu.show {
         transform: translateX(-20px);
     }
-
-    #sobreMi{
-        background-color: rgb(35,35,35);
-        text-align: center;
-        padding-top: 60px;
-    }
     
     #textoSobreMi_1{
         margin-left: 100px;
@@ -257,6 +269,23 @@ body{
     
     #textoContacto{
         margin-left: 100px;
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width:500px) {
+    
+    #textoSobreMi_1{
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 12px;
+    }
+    
+    #textoContacto{
+        margin-left: 25px;
+        margin-right: 25px;
         font-size: 12px;
     }
 
