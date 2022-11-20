@@ -7,11 +7,11 @@
 
 
 .nav-main ul.nav-menu{
+    height: 60px;    
+    width: 100%;    
     background: rgba(0,0,0,0.5);
-    width: 100%;
     position: fixed;
     z-index: 100;
-    height: 60px;
 }
 
 nav {
@@ -73,13 +73,13 @@ body{
 }
 
 #inicio div a{
+    width: 100px;    
     display: block;
-    border: 0.4px solid white;
-    width: 100px;
-    margin-top: 25px;
     padding: 5px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;    
+    border: 0.4px solid white;
+    margin-top: 25px;
 }
 
 #inicio a:hover{
@@ -100,12 +100,12 @@ body{
 } 
 
 #norte, #cataratas, #PeritoMoreno, #Lago_Traful{
+    height: max-content;
+    width: max-content;    
     border: 0.4px solid white;
     background-color: white;
     margin-top: 40px;
     margin-bottom: 20px;
-    height: max-content;
-    width: max-content;
     text-align: left;
     font-size: 13px;
     padding: 10px;
@@ -119,18 +119,7 @@ body{
 }
 
 
-#botonGaleria div a{
-    display: block;
-    border: 0.4px solid white;
-    width: 210px;
-    margin-top: 25px;
-    padding: 5px;
-    color: #fff;
-    text-decoration: none;
-    z-index: 2;
-}
-
-#botonProyecto div a{
+#botonGaleria div a, #botonProyecto div a{
     display: block;
     border: 0.4px solid white;
     width: 210px;
@@ -148,30 +137,30 @@ body{
 }
 
 #sobreMi_1{
+    height: auto;    
     background-image: url(../img/cordoba.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
     font-size: 20px;
     text-align: center;
     color: black;
 }
 
 #sobreMi_2{
+    height: auto;    
     background-image: url(../img/tucuman_1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
     font-size: 20px;
     text-align: center;
     color: black;
 }
 
 #textoSobreMi_1{
+    height: 100%;    
     display: block;
-    height: 100%;
     text-align: left;
     padding: 20px;
     margin-left: 50%;
@@ -189,17 +178,16 @@ body{
 }
 
 #contactoSeccion{
+    height: auto;    
     background-image: url(../img/amanecer.JPG);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
-
 }
 
 #textoContacto{
+    height: 100%;    
     display: block;
-    height: 100%;
     text-align: left;
     padding-left: 20px;
     margin-left: 50%;
@@ -216,9 +204,8 @@ body{
 @media (max-width:1200px) {
 
     .Cataratas, .LagoTraful, .PeritoMotena, .Norte{
-        height: auto;
-        height: auto;
-    }
+        height: 100%;
+        }
 
     #textoSobreMi_1{
         margin-left: 50px;
@@ -242,13 +229,11 @@ body{
     }
 
     .nav-main ul.nav-menu {
+        height: 100%;  
+        width: 170px;              
         display: block;
-        position: fixed;
         top: 0;
         left: 0;
-        background: rgba(0,0,0,0.5);
-        width: 170px;
-        height: 100%;
         padding-left: 30px;
         transform: translateX(-500px);
         transition: transform 0.5s ease-in-out;
@@ -262,31 +247,16 @@ body{
         transform: translateX(-20px);
     }
     
-    #textoSobreMi_1{
+    #textoSobreMi_1, #textoContacto{
         margin-left: 100px;
         font-size: 12px;
     }
-    
-    #textoContacto{
-        margin-left: 100px;
-        font-size: 12px;
-    }
-
 }
 
-
-@media (max-width:500px) {
-    
-    #textoSobreMi_1{
+@media (max-width:500px) {   
+    #textoSobreMi_1, #textoContacto{
         margin-left: 25px;
         margin-right: 25px;
         font-size: 12px;
     }
-    
-    #textoContacto{
-        margin-left: 25px;
-        margin-right: 25px;
-        font-size: 12px;
-    }
-
 }
