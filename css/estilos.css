@@ -199,6 +199,11 @@ body{
     color: white;
 }
 
+.linkedIn{
+    color: white;
+    text-decoration: none;
+}
+
 /* Si la página se va chicando para que no se deformen las imagenes */
 
 @media (max-width:1200px) {
