@@ -147,7 +147,7 @@ body{
     color: black;
 }
 
-#sobreMi_2{
+/* #sobreMi_2{
     height: auto;    
     background-image: url(../img/tucuman_1.jpg);
     background-attachment: fixed;
@@ -156,14 +156,14 @@ body{
     font-size: 20px;
     text-align: center;
     color: black;
-}
+} */
 
 #textoSobreMi_1{
     height: 100%;    
     display: block;
     text-align: left;
     padding: 20px;
-    margin-left: 50%;
+    margin-left: 10%;
     margin-right: 50px;
     background: rgba(20, 20, 20, 0.8);
     font-size: 15px;
