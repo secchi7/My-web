@@ -55,7 +55,7 @@ body{
     color: white;
     letter-spacing: 0.3em;
     font-weight: bold;
-    line-height: 2em;
+    line-height: 1.5em;
     text-align: center;
     font-size: 20px;
 
@@ -113,36 +113,36 @@ body{
     color: rgb(35,35,35);
 }
 
-
 .Cataratas, .LagoTraful, .PeritoMotena, .Norte{
     height: 500px;
 }
 
+#botonAppConsumoLuz div a{
+    display: block;
+    border: 0.4px solid white;
+    width: 325px;
+    margin-top: 25px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#botonAppContable div a{
+    display: block;
+    border: 0.4px solid white;
+    width: 325px;
+    margin-top: 25px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+}
 
 #botonGaleria div a{
     display: block;
     border: 0.4px solid white;
-    width: 210px;
-    margin-top: 25px;
-    padding: 5px;
-    color: #fff;
-    text-decoration: none;
-    z-index: 2;
-}
-#botonAppContable div a{
-    display: block;
-    border: 0.4px solid white;
-    width: 350px;
-    margin-top: 25px;
-    padding: 5px;
-    color: #fff;
-    text-decoration: none;
-    z-index: 2;
-}
-#botonAppConsumoLuz div a{
-    display: block;
-    border: 0.4px solid white;
-    width: 400px;
+    width: 150px;
     margin-top: 25px;
     padding: 5px;
     color: #fff;
@@ -166,17 +166,6 @@ body{
     text-align: center;
     color: black;
 }
-
-/* #sobreMi_2{
-    height: auto;    
-    background-image: url(../img/tucuman_1.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-} */
 
 #textoSobreMi_1{
     height: 100%;    
@@ -276,6 +265,18 @@ body{
         margin-left: 100px;
         font-size: 12px;
     }
+
+    #botonAppConsumoLuz div a{
+        width: 275px;
+    }
+    
+    #botonAppContable div a{
+        width: 275px;
+    }
+    
+    #botonGaleria div a{
+        width: 150px;
+    }
 }
 
 @media (max-width:500px) {   
@@ -283,5 +284,15 @@ body{
         margin-left: 25px;
         margin-right: 25px;
         font-size: 12px;
+    }
+}
+
+@media (max-width:350px) {
+    #botonAppConsumoLuz, #botonAppContable, #botonGaleria{
+        font-size: 10px;
+    }
+
+    #botonGaleria div a{
+        width: 100px;
     }
 }
