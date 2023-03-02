@@ -128,6 +128,17 @@ body{
     z-index: 2;
 }
 
+#botonAppWeb div a{
+    display: block;
+    border: 0.4px solid white;
+    width: 325px;
+    margin-top: 25px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+}
+
 #botonAppContable div a{
     display: block;
     border: 0.4px solid white;
@@ -178,6 +189,10 @@ body{
     font-size: 15px;
     letter-spacing: 0.2em;
     color: white;
+}
+
+#textoSobreMi_1 li{
+    margin-left: 75px;
 }
 
 #contactoFooter{
