@@ -19,8 +19,7 @@ const AppConsumoLuz = () => {
         </p>
         <p>
           Utilicé el módulo tkinter de Python y las librerías de matplotlib,
-          numpy, squilite entre otras. Se puede acceder al repositorio con el
-          siguiente enlace.
+          numpy, squilite entre otras.
         </p>
         <div className="py-3">
           <img className="w-full rounded-xl" src={consumoLuz} alt="" />
