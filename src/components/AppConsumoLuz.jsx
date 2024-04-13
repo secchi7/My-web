@@ -18,7 +18,7 @@ const AppConsumoLuz = () => {
           consumo actual. Grafica los últimos 4 años de la base de datos.
         </p>
         <p>
-          Utilizé el módulo tkinter de Python y las librerías de matplotlib,
+          Utilicé el módulo tkinter de Python y las librerías de matplotlib,
           numpy, squilite entre otras. Se puede acceder al repositorio con el
           siguiente enlace.
         </p>
