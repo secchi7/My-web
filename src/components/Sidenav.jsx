@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   AiOutlineMenu,
   AiOutlineHome,
@@ -12,6 +13,10 @@ const Sidenav = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const{t}=useTranslation()
+  const{home,about,projects,contact}=t("sidenav")
+
   return (
     <div>
       <AiOutlineMenu
@@ -26,7 +31,7 @@ const Sidenav = () => {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineHome size={20} />
-            <span className="pl-4">Inicio</span>
+            <span className="pl-4">{home}</span>
           </a>
 
           <a
@@ -35,7 +40,7 @@ const Sidenav = () => {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <BsPerson size={20} />
-            <span className="pl-4">Sobre mí</span>
+            <span className="pl-4">{about}</span>
           </a>
 
           <a
@@ -44,7 +49,7 @@ const Sidenav = () => {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
-            <span className="pl-4">Proyectos</span>
+            <span className="pl-4">{projects}</span>
           </a>
 
           <a
@@ -53,13 +58,13 @@ const Sidenav = () => {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineMail size={20} />
-            <span className="pl-4">Contacto</span>
+            <span className="pl-4">{contact}</span>
           </a>
         </div>
       ) : (
         ""
       )}
-      <div className="md:block hidden fixed top-[25%] z-10">
+      <div className="md:block hidden fixed top-[40%] z-10">
         <div className="flex flex-col">
           <a
             href="#main"

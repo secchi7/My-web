@@ -7,31 +7,41 @@ import AppConsumoLuz from "./AppConsumoLuz";
 import AppContable from "./AppContable";
 import AppOrganizador from "./AppOrganizador";
 
+import { useTranslation } from "react-i18next";
+
 const Projects = () => {
   const [display, setDisplay] = React.useState(true);
   const [appConsumoLuz, setAppConsumoLuz] = React.useState(false);
   const [appOrganizador, setAppOrganizador] = React.useState(false);
+  const [appContable, setAppContable] = React.useState(false);
+  
+
+  const { t } = useTranslation();
+  const {
+    title,
+    description,
+    title_project_1,
+    title_project_2,
+    title_project_3,
+    info,
+    b_repository,
+    b_back,
+  } = t("projects");
 
   return (
     <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-4">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">
-        Proyectos
-      </h1>
-      <p className="text-Jusitify py-8">
-        Desde que emprendí este camino, desarrolle distintas aplicaciones web
-        como de escritorio, las cuales muestro a continuación.
-      </p>
+      <h1 className="text-4xl font-bold text-center text-[#001b5e]">{title}</h1>
+      <p className="text-Jusitify py-8">{description}</p>
       {display ? (
         <div className="grid sm:grid-cols-2 gap-12">
           <ProjectItem
             img={consumoLuz}
-            title="Aplicación Consumo de Luz"
+            title={title_project_1}
             display_more_info={
               <div onClick={() => setDisplay(false)}>
                 <div onClick={() => setAppConsumoLuz(true)}>
-                  <p> </p>
-                  <p className="w-1/2 text-center m-auto mt-2 p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-                    Más información
+                  <p className="w-fit text-center mt-3 m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
+                    {info}
                   </p>
                 </div>
               </div>
@@ -40,12 +50,12 @@ const Projects = () => {
           />
           <ProjectItem
             img={organizadorTareas}
-            title="Organizador de Tareas"
+            title={title_project_2}
             display_more_info={
               <div onClick={() => setDisplay(false)}>
                 <div onClick={() => setAppOrganizador(true)}>
-                  <p className="w-1/2 text-center m-auto mt-2 p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-                    Más información
+                  <p className="w-fit text-center mt-3 m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
+                    {info}
                   </p>
                 </div>
               </div>
@@ -54,12 +64,15 @@ const Projects = () => {
           />
           <ProjectItem
             img={contable}
-            title="Aplicación Contable"
+            title={title_project_3}
             display_more_info={
               <div onClick={() => setDisplay(false)}>
-                <p className="w-1/2 text-center m-auto mt-2 p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-                  Más información
+              <div onClick={() => setAppContable(true)}>
+                <p className="w-fit text-center mt-3 m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
+                  {info}
                 </p>
+              </div>
+
               </div>
             }
             link="https://github.com/secchi7/AppContable"
@@ -75,15 +88,15 @@ const Projects = () => {
                   href="https://github.com/secchi7/ConsumoLuz/tree/master"
                   target="_blank"
                 >
-                  <p className="w-1/2 text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-                    Ir al Repositorio
+                  <p className="w-fit text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
+                    {b_repository}
                   </p>
                 </a>
                 <div
                   onClick={() => setDisplay(true)}
-                  className="w-1/2 text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg"
+                  className="w-fit text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg"
                 >
-                  <div onClick={() => setAppConsumoLuz(false)}>Volver</div>
+                  <div onClick={() => setAppConsumoLuz(false)}> {b_back}</div>
                 </div>
               </div>
             </div>
@@ -92,15 +105,15 @@ const Projects = () => {
               <AppOrganizador />
               <div className="space-y-2">
                 <a href="https://secchi.pythonanywhere.com/" target="_blank">
-                  <p className="w-1/2 text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-                    Ir al Repositorio
+                  <p className="w-fit text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
+                    {b_repository}
                   </p>
                 </a>
                 <div
                   onClick={() => setDisplay(true)}
-                  className="w-1/2 text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg"
+                  className="w-fit text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg"
                 >
-                  <div onClick={() => setAppOrganizador(false)}>Volver</div>
+                  <div onClick={() => setAppOrganizador(false)}> {b_back}</div>
                 </div>
               </div>
             </div>
@@ -112,15 +125,15 @@ const Projects = () => {
                   href="https://github.com/secchi7/AppContable"
                   target="_blank"
                 >
-                  <p className="w-1/2 text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-                    Ir al Repositorio
+                  <p className="w-fit text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
+                    {b_repository}
                   </p>
                 </a>
                 <div
                   onClick={() => setDisplay(true)}
-                  className="w-1/2 text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg"
+                  className="w-fit text-center m-auto p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg"
                 >
-                  Volver
+                  {b_back}
                 </div>
               </div>
             </div>

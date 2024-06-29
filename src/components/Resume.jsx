@@ -1,20 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import {
+  AiOutlineMenu,
+  AiOutlineHome,
+  AiOutlineProject,
+  AiOutlineMail,
+} from "react-icons/ai";
+import { BsPerson } from "react-icons/bs";
 
-const Resume = () => {
+const Sidenav = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  const{t}=useTranslation()
+  const{home,about,projects,contact}=t("sidenav")
+
   return (
-    <div id="resume" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">
-        Sobre mí
-      </h1>
-      <p className="text-Jusitify py-8">
-        Soy Ingeniero Civil recibido de la UBA, con el objetivo de introducirme
-        en el mundo de la programación. 
-        Mi meta es conseguir el mejor resultado. Me capacito continuamente para superarme día a día, tanto en mi vida personal como en la profesional.         
-        Tengo conocimiento y experiencia en
-        Python, Django, Javascript, Jinja, Bootstrap , MySQL, HTML5 y GIT.
-      </p>
+    <div>
+      <AiOutlineMenu
+        onClick={handleNav}
+        className="absolute top-4 right-4 z-[99] md:hidden"
+      />
+      {nav ? (
+        <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
+          <a
+            onClick={handleNav}
+            href="#main"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <AiOutlineHome size={20} />
+            <span className="pl-4">{home}</span>
+          </a>
+
+          <a
+            onClick={handleNav}
+            href="#resume"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <BsPerson size={20} />
+            <span className="pl-4">{about}</span>
+          </a>
+
+          <a
+            onClick={handleNav}
+            href="#projects"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <AiOutlineProject size={20} />
+            <span className="pl-4">{projects}</span>
+          </a>
+
+          <a
+            onClick={handleNav}
+            href="#contact"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <AiOutlineMail size={20} />
+            <span className="pl-4">{contact}</span>
+          </a>
+        </div>
+      ) : (
+        ""
+      )}
+      <div className="md:block hidden fixed top-[40%] z-10">
+        <div className="flex flex-col">
+          <a
+            href="#main"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+          >
+            <AiOutlineHome size={20} />
+          </a>
+          <a
+            href="#resume"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+          >
+            <BsPerson size={20} />
+          </a>
+          <a
+            href="#projects"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+          >
+            <AiOutlineProject size={20} />
+          </a>
+          <a
+            href="#contact"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+          >
+            <AiOutlineMail size={20} />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Resume;
+export default Sidenav;

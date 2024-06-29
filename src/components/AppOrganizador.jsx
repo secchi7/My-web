@@ -1,28 +1,19 @@
 import React from "react";
 import organizadorTareas from "../assets/organizadorTareas.JPG";
+import { useTranslation } from "react-i18next";
 
 const AppOrganizador = () => {
+  const { t } = useTranslation();
+  const { title, description_1, description_2 } = t("taskOrganizer");
   return (
     <div className="py-3">
       <h2 className="text-2xl text-center font-semibold text-[#001b5e]">
-        Organizador de Tareas
+        {title}
       </h2>
       <div>
-        También desarrollé una aplicación web sencilla para poder registrar
-        distintas tareas pendientes a realizar, destacar las tareas importantes
-        e indicar las tareas finalizadas. Durante el desarrollo de la aplicación
-        utilicé:
-        <div className="pl-4">
-          <li>Django como framework.</li>
-          <li>
-            Javascript para realizar distintas validaciones del lado del cliente
-            en la sección “Registrarse”, como también en la sección “Iniciar
-            Sesión” para que se pueda ver u ocultar la contraseña.
-          </li>
-          <li>Booststrap para el diseño de la aplicación.</li>
-          <li>Jinja como motor de plantillas.</li>
-          <li>MySQL para la base de datos.</li>
-        </div>
+        <p>{description_1}</p>
+        <p>{description_2}</p>
+
         <div className="py-3">
           <img className="w-full rounded-xl" src={organizadorTareas} alt="" />
         </div>

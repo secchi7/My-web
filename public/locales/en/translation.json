@@ -1,0 +1,55 @@
+{
+  "main":{
+    "name": "Andrés Secchi Gehrls",
+    "english":"",
+    "line1": "Civil Engineer",
+    "line2": "Software Developer"
+   
+  },
+  "sidenav":{
+    "home":"Home",
+    "about":"About",
+    "projects":"Projects",
+    "contact":"Contact"
+  },
+  "about":{
+    "title": "About",
+    "description": "I am a Civil Engineer graduated from UBA. I am eager to delve into the world of programming. My goal is to achieve the best possible outcome. I continuously strive to improve myself every day by seeking further education and development, both in my personal and professional life. I have knowledge of Python, Django, Javascript, Jinja, Bootstrap , MySQL, HTML5 and GIT."
+  },
+  "projects":{
+    "title": "Projects",
+    "description": "Since I have been starting, this path, I have developed different web and desktop applications, which I show below.",
+    "title_project_1":"App Consumo de Luz",
+    "title_project_2":"Organizador de Tareas",
+    "title_project_3":"App Contable",
+    "info": "More info",
+    "b_repository":"Go to repository",
+    "b_back":"Back"
+
+  },
+  "lightApp":{
+    "title":"Light Consumption Application",
+    "description_1": "Desktop application for electric consumption control. The year is separate for bimesters. The first period starts the 24th december from the previous year. ",
+    "description_2": "The program calculates the consumption by periods and by year. It graphs the last four years.",
+    "description_3": "I have used Tkinter of Python and the libraries of matplotlib, numpy, sqlite between others."
+  },
+  "accountingApp":{
+    "title":"Accounting Application",
+    "description_1": "Finances desktop application (spending, saving and investing). It is still development.",
+    "description_2": "I have been using Tkinter of Python and the libraries of matplotlib, numpy, sqlite between others."
+  },
+
+  "taskOrganizer":{
+    "title":"Task Organizer",
+    "description_1": "Web application allows users to register various tasks, highlight important ones, and mark completed tasks. ",
+    "description_2": "I have been using Django, Javascript, Boostrap Jinja and MySQL.",
+    "description_3": "",
+    "description_4": "",
+    "description_5": "",
+    "description_6": ""
+  },
+  "contact":{
+    "title": "Contact",
+    "description": "You can contact me by writing aasecchi@gmail.com"
+  }
+}

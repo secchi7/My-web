@@ -1,21 +1,21 @@
-import { useState } from "react"
-import Sidenav from "./components/Sidenav"
-import Main from "./components/Main"
-import Projects from "./components/Projects"
-import Resume from "./components/Resume"
-import Contact from "./components/Contact"
+import Sidenav from "./components/Sidenav";
+import Main from "./components/Main";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
+import LangueSelector from "./components/LangueSelector";
 
-function App(){
+function App() {
   return (
     <div className="bg-slate-200">
-      <Sidenav/>
-      <Main/>
-      <Resume/>
-      <Projects/>
-      <Contact/>
+      <LangueSelector />
+      <Sidenav />
+      <Main />
+      <Resume />
+      <Projects />
+      <Contact />
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
