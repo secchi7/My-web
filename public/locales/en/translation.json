@@ -19,9 +19,9 @@
   "projects":{
     "title": "Projects",
     "description": "Since I have been starting, this path, I have developed different web and desktop applications, which I show below.",
-    "title_project_1":"App Consumo de Luz",
-    "title_project_2":"Organizador de Tareas",
-    "title_project_3":"App Contable",
+    "title_project_1":"Light Consumption Application",
+    "title_project_2":"Task Organizer",
+    "title_project_3":"Accounting Application",
     "info": "More info",
     "b_repository":"Go to repository",
     "b_back":"Back"
