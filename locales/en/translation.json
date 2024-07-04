@@ -22,6 +22,7 @@
     "title_project_1":"Light Consumption Application",
     "title_project_2":"Task Organizer",
     "title_project_3":"Accounting Application",
+    "title_project_4":"Ratios Shares",
     "info": "More info",
     "b_repository":"Go to repository",
     "b_back":"Back"
@@ -42,12 +43,15 @@
   "taskOrganizer":{
     "title":"Task Organizer",
     "description_1": "Web application allows users to register various tasks, highlight important ones, and mark completed tasks. ",
-    "description_2": "I have been using Django, Javascript, Boostrap Jinja and MySQL.",
-    "description_3": "",
-    "description_4": "",
-    "description_5": "",
-    "description_6": ""
+    "description_2": "I have been using Django, Javascript, Boostrap Jinja and MySQL."
   },
+
+  "ratioShare":{
+    "title":"Ratio Shares",
+    "description_1": "Web application you can compare the prices between financial assets.",
+    "description_2": "I have been using React, Python and Tailwind."
+  },
+
   "contact":{
     "title": "Contact",
     "description": "You can contact me by writing aasecchi@gmail.com"
