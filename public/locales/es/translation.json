@@ -1,47 +1,53 @@
 {
-    "main":{
-        "name": "Andrés Secchi Gehrls",
-        "english":"",
-        "line1": "Ingeniero Civil",
-        "line2": "Programador"
-      },
-      "sidenav":{
-        "home":"Inicio",
-        "about":"Sobre mí",
-        "projects":"Proyectos",
-        "contact":"Contacto"
-      },
-    "about":{
-        "title": "Sobre mí",
-        "description": "Soy Ingeniero Civil recibido de la UBA, con el objetivo de introducirme en el mundo de la programación. Mi meta es conseguir el mejor resultado. Me capacito continuamente para superarme día a día, tanto en mi vida personal como en la profesional. Tengo conocimiento y experiencia en Python, Django, Javascript, Jinja, Bootstrap , MySQL, HTML5 y GIT."
-        },
-    "projects":{
-        "title": "Proyectos",
-        "description": "Desde que emprendí este camino, desarrolle distintas aplicaciones web como de escritorio, las cuales muestro a continuación.",
-        "title_project_1":"Aplicación Consumo de Luz",
-        "title_project_2":"Organizador de Tareas",
-        "title_project_3":"Aplicación Contable",
-        "info": "Más información",
-        "b_repository":"Ir al repositorio",
-        "b_back":"Volver"
-    },
-    "lightApp":{
-        "title":"Aplicación Consumo de Luz",
-        "description_1": "Aplicación para controlar el consumo de luz. Se divide el año en períodos bimestrales. El primer período inicia el día 24 de diciembre del año anterior",
-        "description_2": "El programa realiza el cálculo del consumo por períodos, como así el consumo actual. Grafica los últimos 4 años de la base de datos.",
-        "description_3": "Utilizé el módulo tkinter de Python y las librerías de matplotlib, numpy, squilite entre otras."
-    },
-    "accountingApp":{
-        "title":"Aplicación Contable",
-        "description_1": "Aplicación para registrar los ahorros, gastos e inversiones. En el proyecto utilizo el módulo tkinter de Python y las librerías datetime, sqlite y requests."
-      },
-      "taskOrganizer":{
-        "title":"Organizador de Tareas",
-        "description_1": "Aplicación web sencilla para poder registrar las tareas. Está aplicación permite al usuario registrar varias tareas, indicar las importantes y marcar las tareas completas.",
-        "description_2": "Durante el desarrollo de la aplicación utilicé, Django, Javascript, Boostrap, Jinja y MySQL."
-      },
-    "contact":{
-        "title": "Contacto",
-        "description": "Me podes contactar escribiendo aasecchi@gmail.com"
-      }
+  "main": {
+    "name": "Andrés Secchi Gehrls",
+    "english": "",
+    "line1": "Ingeniero Civil",
+    "line2": "Programador"
+  },
+  "sidenav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy Ingeniero Civil recibido de la UBA, con el objetivo de introducirme en el mundo de la programación. Mi meta es conseguir el mejor resultado. Me capacito continuamente para superarme día a día, tanto en mi vida personal como en la profesional. Tengo conocimiento y experiencia en Python, Django, Javascript, Jinja, Bootstrap , MySQL, HTML5 y GIT."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Desde que emprendí este camino, desarrolle distintas aplicaciones web como de escritorio, las cuales muestro a continuación.",
+    "title_project_1": "Aplicación Consumo de Luz",
+    "title_project_2": "Organizador de Tareas",
+    "title_project_3": "Aplicación Contable",
+    "title_project_4": "Comparador de Acciones",
+    "info": "Más información",
+    "b_repository": "Ir al repositorio",
+    "b_back": "Volver"
+  },
+  "lightApp": {
+    "title": "Aplicación Consumo de Luz",
+    "description_1": "Aplicación para controlar el consumo de luz. Se divide el año en períodos bimestrales. El primer período inicia el día 24 de diciembre del año anterior",
+    "description_2": "El programa realiza el cálculo del consumo por períodos, como así el consumo actual. Grafica los últimos 4 años de la base de datos.",
+    "description_3": "Utilizé el módulo tkinter de Python y las librerías de matplotlib, numpy, squilite entre otras."
+  },
+  "accountingApp": {
+    "title": "Aplicación Contable",
+    "description_1": "Aplicación para registrar los ahorros, gastos e inversiones. En el proyecto utilizo el módulo tkinter de Python y las librerías datetime, sqlite y requests."
+  },
+  "taskOrganizer": {
+    "title": "Organizador de Tareas",
+    "description_1": "Aplicación web sencilla para poder registrar las tareas. Está aplicación permite al usuario registrar varias tareas, indicar las importantes y marcar las tareas completas.",
+    "description_2": "Durante el desarrollo de la aplicación utilicé, Django, Javascript, Boostrap, Jinja y MySQL."
+  },
+  "ratioShare": {
+    "title": "Calculadora de Ratios",
+    "description_1": "something. ",
+    "description_2": "Durante el desarrollo de la aplicación utilicé React, Python and Tailwind."
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Me podes contactar escribiendo aasecchi@gmail.com"
+  }
 }
