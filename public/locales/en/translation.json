@@ -43,16 +43,12 @@
   "taskOrganizer":{
     "title":"Task Organizer",
     "description_1": "Web application allows users to register various tasks, highlight important ones, and mark completed tasks. ",
-    "description_2": "I have been using Django, Javascript, Boostrap Jinja and MySQL.",
-    "description_3": "",
-    "description_4": "",
-    "description_5": "",
-    "description_6": ""
+    "description_2": "I have been using Django, Javascript, Boostrap Jinja and MySQL."
   },
 
   "ratioShare":{
     "title":"Ratio Shares",
-    "description_1": "something. ",
+    "description_1": "Web application you can compare the prices between financial assets.",
     "description_2": "I have been using React, Python and Tailwind."
   },
 

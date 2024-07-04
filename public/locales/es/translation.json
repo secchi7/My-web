@@ -43,7 +43,7 @@
   },
   "ratioShare": {
     "title": "Calculadora de Ratios",
-    "description_1": "something. ",
+    "description_1": "Aplicación web para poder comparar los precios entre distintos activos financieros.",
     "description_2": "Durante el desarrollo de la aplicación utilicé React, Python and Tailwind."
   },
   "contact": {
