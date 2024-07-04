@@ -22,6 +22,7 @@
     "title_project_1":"Light Consumption Application",
     "title_project_2":"Task Organizer",
     "title_project_3":"Accounting Application",
+    "title_project_4":"Ratios Shares",
     "info": "More info",
     "b_repository":"Go to repository",
     "b_back":"Back"
@@ -48,6 +49,13 @@
     "description_5": "",
     "description_6": ""
   },
+
+  "ratioShare":{
+    "title":"Ratio Shares",
+    "description_1": "something. ",
+    "description_2": "I have been using React, Python and Tailwind."
+  },
+
   "contact":{
     "title": "Contact",
     "description": "You can contact me by writing aasecchi@gmail.com"
